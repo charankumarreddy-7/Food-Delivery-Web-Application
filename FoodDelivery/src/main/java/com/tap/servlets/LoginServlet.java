@@ -35,9 +35,11 @@ public class LoginServlet extends HttpServlet {
 			
 			return;
 
-		} else {
+		}else {
 
-			resp.sendRedirect("login.html");
+		    req.setAttribute("errorMessage", "Invalid username or password!");
+
+		    req.getRequestDispatcher("login.jsp").forward(req, resp);
 		}
 	}
 }

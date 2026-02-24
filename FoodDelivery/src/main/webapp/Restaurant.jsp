@@ -171,8 +171,8 @@ footer {
 		<div class="logo">FoodExpress</div>
 		<div class="nav-links">
 			<a href="#">Home</a> 
-			<a href="#">Login</a> 
-			<a href="cart">Cart</a> 
+			<a href="login.jsp">Login</a> 
+			<a href="Cart.jsp">Cart</a> 
 			<a href="#">Profile</a>
 		</div>
 	</div>

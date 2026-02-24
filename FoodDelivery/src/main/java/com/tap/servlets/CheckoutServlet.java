@@ -32,7 +32,7 @@ public class CheckoutServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		User user = (User) session.getAttribute("user");
 		if (user == null) {
-			resp.sendRedirect("login.html");
+			resp.sendRedirect("login.jsp");
 			return;
 		}
 
@@ -54,7 +54,7 @@ public class CheckoutServlet extends HttpServlet {
 		String paymentMethod = req.getParameter("paymentMethod");
 
 		if (user == null) {
-			resp.sendRedirect("login.html");
+			resp.sendRedirect("login.jsp");
 			return;
 		}
 
